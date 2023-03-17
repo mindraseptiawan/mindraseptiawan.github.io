@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PENGEMBANGAN WEB</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h3 class="logo">D'ARDNI</h3>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="Tugas/konversi.php">Tugas</a>
+        <a class="btnservice">Service</a>
+        <a href="https://www.instagram.com/draktul/">Contact</a>
+        <button class="btnlogin">Login</button>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <span class="close-icon"><ion-icon name="close-outline"></ion-icon></span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="unyu/proseslogin.php" method="post">
+          <div class="input-box">
+            <span class="icon"
+              ><ion-icon name="mail-open-outline"></ion-icon
+            ></span>
+            <input type="email" name="email" id="email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="build-outline"></ion-icon></span>
+            <input type="password" name="password" id="password" required />
+            <label>Password</label>
+          </div>
+          <div class="forgot">
+            <label><input type="checkbox" />Ingat Tuhan Mu</label>
+            <a href="#">Lupa?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-reg">
+            <p>Tidak Punya Akun?<a href="#" class="reg-link">Register</a></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Register</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"
+              ><ion-icon name="person-outline"></ion-icon
+            ></span>
+            <input type="text" name="name" id="Username" required />
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"
+              ><ion-icon name="mail-open-outline"></ion-icon
+            ></span>
+            <input type="email" name="newemail" id="newemail" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="build-outline"></ion-icon></span>
+            <input
+              type="password"
+              name="newpassword"
+              id="newpassword"
+              required
+            />
+            <label>Password</label>
+          </div>
+          <div class="forgot">
+            <label><input type="checkbox" />Saya Setujuh</label>
+            <a href="#">Lupa?</a>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-reg">
+            <p>
+              Sudah ada yang Punya Ya?<a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="subscribe">
+      <span class="close"><ion-icon name="close-outline"></ion-icon></span>
+      <p>Konversi Nilai</p>
+      <form action="unyu/nilai.php" method="post">
+        <input
+          type="number"
+          name="nilai"
+          class="subscribe-input"
+          placeholder="Masukkan Nilai"
+        />
+        <br />
+        <div>
+          <input class="submit-btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
