@@ -4,6 +4,8 @@ const registerLink = document.querySelector('.reg-link');
 const btnPopup = document.querySelector('.btnlogin');
 const iconClose = document.querySelector('.close-icon');
 const konVersi = document.querySelector('.btnservice');
+const crud = document.querySelector('.btntugas');
+const card = document.querySelector('.card');
 const subScribe = document.querySelector('.subscribe');
 const closed = document.querySelector('.close')
 
@@ -25,6 +27,10 @@ iconClose.addEventListener('click',()=> {
 
 konVersi.addEventListener('click',()=> {
     subScribe.classList.add('active-topup');
+});
+
+crud.addEventListener('click',()=> {
+  card.classList.add('active-table');
 });
 
 closed.addEventListener('click',()=> {

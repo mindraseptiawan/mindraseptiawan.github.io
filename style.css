@@ -363,3 +363,15 @@ header{
     background-color: #07013d;
     box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
 }
+
+.mx-auto {
+    width: 800px;
+}
+.card{
+    margin-top: 60px;
+
+}
+.btn-close{
+    padding-left: 0;
+    margin-left: 0;
+}

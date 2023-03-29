@@ -1,3 +1,7 @@
+<?php
+include "crud.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +16,7 @@
       <h3 class="logo">D'ARDNI</h3>
       <nav class="navbar">
         <a href="#">Home</a>
-        <a href="Tugas/konversi.php">Tugas</a>
+        <a class="btntugas" href="main.php">Tugas</a>
         <a class="btnservice">Service</a>
         <a href="https://www.instagram.com/draktul/">Contact</a>
         <button class="btnlogin">Login</button>
@@ -22,7 +26,7 @@
       <span class="close-icon"><ion-icon name="close-outline"></ion-icon></span>
       <div class="form-box login">
         <h2>Login</h2>
-        <form action="unyu/proseslogin.php" method="post">
+        <form action="" method="post">
           <div class="input-box">
             <span class="icon"
               ><ion-icon name="mail-open-outline"></ion-icon
@@ -41,7 +45,7 @@
           </div>
           <button type="submit" class="btn">Login</button>
           <div class="login-reg">
-            <p>Tidak Punya Akun ya?<a href="#" class="reg-link">Register</a></p>
+            <p>Tidak Punya Akun?<a href="#" class="reg-link">Register</a></p>
           </div>
         </form>
       </div>
